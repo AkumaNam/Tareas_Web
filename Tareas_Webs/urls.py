@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app_banco import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', views.index),
+    path('banco/index', views.index, name="index"),
+    path('banco/cliente', views.cliente, name="cliente"),
+
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

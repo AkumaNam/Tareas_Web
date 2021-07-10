@@ -12,6 +12,7 @@ class Cliente(models.Model):
     fecha_nacimiento = models.DateField(blank= False, null=False)
     telefono = models.IntegerField()
     correo = models.EmailField()
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self) -> str:
         return f'Cliente {self.nombre} {self.apellido}'

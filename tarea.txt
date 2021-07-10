@@ -15,8 +15,8 @@ Tarea del segundo parcial
 **1- Registrar clientes (desde admin): $5,000.00
 **    -> Nombre, Apellido, Dirección, Fecha de nacimiento, Teléfono y Correo
 
-2- Crear cuenta bancaria a un determinado cliente (desde admin): $5,000.00
-    -> Fecha creación, estado (Activa | Inactiva), saldo, propietario de la cuenta (Cliente)
+**2- Crear cuenta bancaria a un determinado cliente (desde admin): $5,000.00
+**    -> Fecha creación, estado (Activa | Inactiva), saldo, propietario de la cuenta (Cliente)
 
 3- Realizar depósito a una cuenta (desarrollar) (solo lo puede hacer el superuser): $10,000.00
 4- Reallzar retiro a una cuenta (desarrollar) (solo lo puede hacer el superuser): $10,000.00
