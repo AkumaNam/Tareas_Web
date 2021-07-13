@@ -15,7 +15,7 @@ class Cliente(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self) -> str:
-        return f'Cliente {self.nombre} {self.apellido}'
+        return f'{self.user}'
 
 class Cuentas(models.Model):
     fecha_creada = models.DateTimeField(auto_now_add=True)

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+Transacciones
+{% endblock title %}
+
+{% block Container %}
+
+    <div class="col-9">
+        {% if messages %}
+            <div  class="alert alert-success mb-2">
+            {% for message in messages %}
+                {{ message|safe }}
+            {% endfor %}
+            </div >
+        {% endif %}
+        
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for  in  %}
+                        <tr>
+                            <td class="text-center">{{ }}</td>
+                            <td class="text-center">{{ }}</td>
+                            <td class="text-center">{{ }</td>
+                        </tr>
+                    {% empty %}
+                    <tr>
+                        <td class="text-danger text-center" colspan="">No se encontraron resultados</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock Container %}
+
+{% block js %}
+
+{% endblock js %}
+<!--Transferencias-->

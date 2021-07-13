@@ -15,13 +15,16 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-              <a class="navbar-brand" href="/">Inicio</a>
+              <a class="navbar-brand" href="/">Registro</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <a href="{% url 'cliente' %}" class="nav-link">Depositos y Retiros</a>
+                <a href="{% url 'transferencias' %}" class="nav-link">Transacciones</a>
+                <a href="{% url 'logout_view' %}" class="nav-link">Salir</a>
                 <div class="navbar-nav">
-                  <!--<a href="" class="nav-link text-white">{{request.user.cliente}}</a>-->
+                <a href="" class="nav-link text-white">{{request.user.cliente}}</a>
                 </div>
               </div>
             </div>
@@ -29,7 +32,7 @@
     </header>
     <main>
         <div class="container mt-5">
-          {% block container%} {% endblock %}
+          {% block container %}{% endblock container %}
         </div>
     </main>
 

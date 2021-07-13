@@ -21,8 +21,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('banco/index', views.index, name="index"),
+    path('', views.index, name="index"),
     path('banco/cliente', views.cliente, name="cliente"),
+    path('banco/transacciones', views.transferencias, name="transferencias"),
+    path('banco/login', views.log_in, name="login_view"),
+    path('banco/logout', views.log_out, name="logout_view")
 
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
